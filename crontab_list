@@ -1,0 +1,4 @@
+#@reboot python /home/pi/Documents/RasPiCamera/camera2.py
+#*/1 * * * * python /home/pi/Documents/RasPiCamera/camera2.py
+# *** Un-Comment the above to lines for Cron Process, runs program
+# *** at start and tries every minute in case of crash.
