@@ -25,7 +25,7 @@ with picamera.PiCamera() as camera:
             
     for x in range(int(VidNum),(int(num_files)+int(VidNum))):
         f = open("/home/pi/Documents/RasPiCamera/VidNum.txt" , "w")
-        filename = "/home/pi/Desktop/video_" +str(x)+".h264" #save location
+        filename = "/media/pi/Samsung_T3/Videos/video_" +str(x)+".h264" #save location
         camera.start_recording(filename) 
         camera.wait_recording(time_r) 
         camera.stop_recording()
